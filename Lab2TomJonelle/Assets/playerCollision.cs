@@ -64,6 +64,5 @@ public class playerCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     
     }
 }

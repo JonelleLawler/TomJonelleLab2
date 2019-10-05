@@ -6,7 +6,7 @@ public class smallPlanet : MonoBehaviour
 {
     private float speed;
     private float moveHorizontal;
-    private float moveVerticle;
+    private float moveVertical;
 
     int size = 1;
 
@@ -19,14 +19,34 @@ public class smallPlanet : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         speed = Random.Range(1, 3);
         moveHorizontal = Random.Range(-2, 2);
-        moveVerticle = Random.Range(-2, 2);
+        moveVertical = Random.Range(-2, 2);
 
     }
 
     void FixedUpdate()
     {
-        Vector2 movement = new Vector2(moveHorizontal, moveVerticle);
+        Vector2 movement = new Vector2(moveHorizontal, moveVertical) ;
         rb2d.AddForce(movement * speed);
+
+        if(transform.position.x >= 10.922)
+        {
+         ;
+        }
+
+        if(transform.position.x <= -9.078)
+        {
+          
+        }
+
+        if(transform.position.y >= 8.366)
+        {
+            
+        }
+
+       if(transform.position.y <= -6.634)
+        {
+           
+        }
     }
 
 
