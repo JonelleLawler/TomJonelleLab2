@@ -38,11 +38,15 @@ public class playerCollision : MonoBehaviour
 
             //
             GameObject.Find("Player").transform.localScale += new Vector3(x, y, z);
+
+            ScoreScript.scoreValue = ScoreScript.scoreValue + 1;
+
         }
         else if(volume < otherVolume)
         {
             Destroy(transform.parent.gameObject);
             Debug.Log("Player Dies");
+            ScoreScript.playerAlive = false; 
         }
         else if(volume == otherVolume)
         {
