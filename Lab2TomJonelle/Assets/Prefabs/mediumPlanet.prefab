@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6933447164597405157}
   - component: {fileID: 6933447164597405156}
   - component: {fileID: 6933447164597405152}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: mediumPlanet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
