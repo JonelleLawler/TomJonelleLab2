@@ -41,6 +41,7 @@ public class playerCollision : MonoBehaviour
         }
         else if(volume < otherVolume)
         {
+            Destroy(transform.parent.gameObject);
             Debug.Log("Player Dies");
         }
         else if(volume == otherVolume)
