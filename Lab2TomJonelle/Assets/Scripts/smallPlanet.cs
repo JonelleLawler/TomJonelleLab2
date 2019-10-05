@@ -31,11 +31,11 @@ public class smallPlanet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        moveHorizontal = moveHorizontal * -1;
-        moveVerticle = moveVerticle * -1;
+        //moveHorizontal = moveHorizontal * -1;
+        //moveVerticle = moveVerticle * -1;
 
 
-        Debug.Log("HIT HIT HIT!");
+        //Debug.Log("HIT HIT HIT!");
 
         /*
         if (other.gameObject.CompareTag("PickUp"))

@@ -63,6 +63,7 @@
     <Compile Include="Assets\bigPlanet.cs" />
     <Compile Include="Assets\MediumPlanet.cs" />
     <Compile Include="Assets\Scripts\CameraMove.cs" />
+    <Compile Include="Assets\Scripts\PlayerCollision.cs" />
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\smallPlanet.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
