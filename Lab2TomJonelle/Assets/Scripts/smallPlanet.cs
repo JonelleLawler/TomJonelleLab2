@@ -8,6 +8,8 @@ public class smallPlanet : MonoBehaviour
     private float moveHorizontal;
     private float moveVerticle;
 
+    int size = 1;
+
 
     private Rigidbody2D rb2d;
     private int count;
@@ -23,7 +25,6 @@ public class smallPlanet : MonoBehaviour
 
     void FixedUpdate()
     {
-
         Vector2 movement = new Vector2(moveHorizontal, moveVerticle);
         rb2d.AddForce(movement * speed);
     }
