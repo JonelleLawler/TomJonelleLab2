@@ -8,6 +8,10 @@ public class smallPlanet : MonoBehaviour
     private float moveHorizontal;
     private float moveVertical;
 
+    //Initial set up
+    private float xPos;
+    private float yPos;
+
     int size = 1;
 
 
@@ -16,6 +20,11 @@ public class smallPlanet : MonoBehaviour
 
     void Start()
     {
+        xPos = Random.Range(-30, 30);
+        yPos = Random.Range(-20, 20);
+
+        transform.position = new Vector3(xPos, yPos, 1);
+
         rb2d = GetComponent<Rigidbody2D>();
         speed = Random.Range(1, 3);
         moveHorizontal = Random.Range(-2, 2);

@@ -8,12 +8,21 @@ public class MediumPlanet : MonoBehaviour
     private float moveHorizontal;
     private float moveVerticle;
 
+    //Random Spawn
+    private float xPos;
+    private float yPos;
+
 
     private Rigidbody2D rb2d;
     private int count;
 
     void Start()
     {
+        xPos = Random.Range(-30, 30);
+        yPos = Random.Range(-20, 20);
+
+        transform.position = new Vector3(xPos, yPos, 1);
+
         rb2d = GetComponent<Rigidbody2D>();
         speed = Random.Range(0.5f, 1f);
         moveHorizontal = Random.Range(-2, 2);
